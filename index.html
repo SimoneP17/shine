@@ -1,93 +1,137 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shine Beauty and Nails</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shine Beauty and Nails</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(180deg, #fffafa, #fdeaea);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    .container {
-      max-width: 400px;
-      width: 90%;
-    }
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: radial-gradient(circle at top, #fffafa 0%, #f8e6e6 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  color: #6e3a3a;
+}
 
-    .logo {
-      width: 180px;
-      margin-bottom: 10px;
-    }
+.container {
+  width: 90%;
+  max-width: 420px;
+  animation: fadeIn 1.2s ease-in-out;
+}
 
-    h1 {
-      font-family: 'Playfair Display', serif;
-      color: #8b3a3a;
-      font-size: 32px;
-      margin-bottom: 5px;
-    }
+.logo {
+  width: 170px;
+  margin-bottom: 15px;
+}
 
-    .subtitle {
-      letter-spacing: 2px;
-      font-size: 12px;
-      color: #b46a6a;
-      margin-bottom: 30px;
-    }
+.brand-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  margin: 5px 0;
+  color: #8b3a3a;
+}
 
-    .link {
-      display: block;
-      text-decoration: none;
-      background: #c76b6b;
-      color: white;
-      padding: 14px;
-      margin: 10px 0;
-      border-radius: 30px;
-      font-size: 15px;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 10px rgba(199, 107, 107, 0.3);
-    }
+.subtitle {
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-bottom: 35px;
+  color: #b46a6a;
+}
 
-    .link:hover {
-      background: #a94f4f;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 14px rgba(169, 79, 79, 0.4);
-    }
+.link {
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(135deg, #d77c7c, #b85c5c);
+  color: white;
+  padding: 16px;
+  margin: 15px 0;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(184, 92, 92, 0.25);
+}
 
-    footer {
-      margin-top: 30px;
-      font-size: 11px;
-      color: #b88c8c;
-    }
-  </style>
+.link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(184, 92, 92, 0.35);
+}
+
+footer {
+  margin-top: 35px;
+  font-size: 12px;
+  color: #b88c8c;
+}
+
+.tagline {
+  margin-top: 8px;
+  font-size: 13px;
+  font-style: italic;
+  color: #a56a6a;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
 </head>
+
 <body>
 
-  <div class="container">
-    <!-- Sostituisci con il file del tuo logo -->
-    <img src="logo.png" alt="Shine Beauty and Nails" class="logo">
+<div class="container">
 
-    <h1>Shine</h1>
-    <div class="subtitle">BEAUTY AND NAILS</div>
-    
-    <a class="link" href="https://www.instagram.com/shine_beauty.and.nails?igsh=MTZyZ3g0ZnB6bGhjZg==">📸 Instagram</a>
-    <a class="link" href="https://tiktok.com/@TUO_PROFILO" target="_blank">🎵 TikTok</a>
-    <a class="link" href="https://wa.me/393935041797">💬 WhatsApp</a>
-    <a class="link" href="https://www.google.it/maps/place/Shine+Beauty+and+Nails,+Via+Stella,+81,+80035+Nola+NA/@40.9209717,14.539676,17z/data=!4m6!3m5!1s0x133bb337fefb1783:0xb77ed59f5c6067ee!8m2!3d40.9209717!4d14.539676!16s%2Fg%2F11y40ym22n?utm_campaign=ml-ardi&g_ep=Eg1tbF8yMDI2MDIyNV8wIOC7DCoASAJQAQ%3D%3D">📍 Dove siamo</a>
+  <img src="logo.png" alt="Shine Beauty and Nails" class="logo">
 
-    <footer>
-      © 2026 Shine Beauty and Nails
-    </footer>
-  </div>
+  <div class="brand-title">Shine</div>
+  <div class="subtitle">BEAUTY AND NAILS</div>
+
+  <!-- WHATSAPP -->
+  <a class="link" 
+     href="https://wa.me/393935041797"
+     target="_blank">
+     💬 Prenota su WhatsApp
+  </a>
+
+  <!-- INSTAGRAM -->
+  <a class="link" 
+     href="https://www.instagram.com/shine_beauty.and.nails?igsh=MTZyZ3g0ZnB6bGhjZg=="
+     target="_blank">
+     📸 Instagram
+  </a>
+
+  <!-- TIKTOK -->
+  <a class="link" 
+     href="https://tiktok.com/@TUO_TIKTOK"
+     target="_blank">
+     🎵 TikTok
+  </a>
+
+  <!-- MAPS -->
+  <a class="link" 
+     href="https://www.google.it/maps/place/Shine+Beauty+and+Nails,+Via+Stella,+81,+80035+Nola+NA/@40.9209717,14.539676,17z/data=!4m6!3m5!1s0x133bb337fefb1783:0xb77ed59f5c6067ee!8m2!3d40.9209717!4d14.539676!16s%2Fg%2F11y40ym22n?utm_campaign=ml-ardi&g_ep=Eg1tbF8yMDI2MDIyNV8wIOC7DCoASAJQAQ%3D%3D"
+     target="_blank">
+     📍 Dove siamo
+  </a>
+
+  <footer>
+    <div>© 2026 Shine Beauty and Nails</div>
+    <div class="tagline">La tua bellezza, il nostro tocco di luce ✨</div>
+  </footer>
+
+</div>
 
 </body>
 </html>
